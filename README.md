@@ -31,9 +31,21 @@ let result5 = extractStr.match(codingRegex);
 ```
 
 ****
-## Flags
+## Flags i, g, m, s, u, y
+`Flag i - With this flag the search is case-insensitive`
 ```js
 let myStringi = "freeCodeCamp";
 let fccRegex = /freecodecamp/i; 
 let result4 = fccRegex.test(myStringi); 
+```
+
+`Flag g - search looks for all matches`
+```js
+let testStr = "Repeat, Repeat, Repeat";
+let ourRegex = /Repeat/g;
+testStr.match(ourRegex);
+
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /twinkle/ig;
+let result6 = twinkleStar.match(starRegex); 
 ```
