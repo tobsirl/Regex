@@ -59,3 +59,33 @@ let vowelRegex = /[aeiou]/ig;
 let result8 = quoteSample.match(vowelRegex);
 
 console.log(result8);
+
+// Match a range of letters
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/ig; 
+let result9 = quoteSample.match(alphabetRegex); 
+
+console.log(result9);
+
+// Match a range of number and letters
+let quoteSample = "Blueberry 3.141592653s are delicious.";
+let myRegex = /[2-6h-s]/ig;
+let result10 = quoteSample.match(myRegex); 
+
+console.log(result10);
+
+// Negate character when you don't want to match
+let quoteSample = "3 blind mice.";
+let myRegex = /[^0-9aeiou]/ig; 
+let result11 = quoteSample.match(myRegex); 
+
+console.log(result11);
+
+// Match characters that occur multiple times
+let difficultSpelling = "Mississipspi";
+let myRegex = /s+/g; 
+let result12 = difficultSpelling.match(myRegex);
+
+console.log(result12);
+
+// occur zero or more times
