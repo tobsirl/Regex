@@ -136,6 +136,12 @@ let quoteSample = "The five boxing wizards jump quickly.";
 let nonAlphabetRegex = /\W/g; // Change this line
 let result = quoteSample.match(nonAlphabetRegex).length;
 ```
+
+```js 
+let numString = "Your sandwich will be $5.00";
+let numRegex = /\d/g; // Change this line
+let result = numString.match(numRegex).length;
+```
 ---
 
 ## Flags i, g, m, s, u, y
