@@ -52,7 +52,7 @@ let bgRegex = /b[aiu]g/;
 let quoteSample =
   'Beware of bugs in the above code; I have only proved it correct, not tried it.';
 let vowelRegex = /[aeiou]/gi;
-let result8 = quoteSample.match(vowelRegex);
+let result8 = quoteSample.match(vowelRegex); // Returns all the vowels
 ```
 
 ```js
@@ -85,17 +85,28 @@ let result12 = difficultSpelling.match(myRegex);
 
 ```js
 // Match characters occur zero or more times using star
-let soccerWord = "gooooooooal!";
-let gPhrase = "gut feeling";
-let oPhrase = "over the moon";
+let soccerWord = 'gooooooooal!';
+let gPhrase = 'gut feeling';
+let oPhrase = 'over the moon';
 let goRegex = /go*/;
 soccerWord.match(goRegex); // Returns ["goooooooo"]
 gPhrase.match(goRegex); // Returns ["g"]
 oPhrase.match(goRegex); // Returns null
 
-let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";
+let chewieQuote = 'Aaaaaaaaaaaaaaaarrrgh!';
 let chewieRegex = /Aa*/; // Change this line
 let result = chewieQuote.match(chewieRegex);
+```
+
+```js
+// Find Characters with a Lazy Match
+let string = 'titanic';
+let regex = /t[a-z]*?i/;
+string.match(regex);
+
+let text = '<h1>Winter is coming</h1>';
+let myRegex = /<.*?>/;
+let result = text.match(myRegex); // Returns <h1>
 ```
 
 ---

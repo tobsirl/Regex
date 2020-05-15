@@ -56,7 +56,7 @@ let bgRegex = /b[aiu]g/;
 
 let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
 let vowelRegex = /[aeiou]/ig;
-let result8 = quoteSample.match(vowelRegex);
+let result8 = quoteSample.match(vowelRegex); // Returns all the vowels
 
 console.log(result8);
 
@@ -99,6 +99,15 @@ oPhrase.match(goRegex); // Returns null
 
 let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";
 let chewieRegex = /Aa*/; // Change this line
-let result = chewieQuote.match(chewieRegex);
+let result = chewieQuote.match(chewieRegex); // Returns Aaaaaaaaaaaaaaaa
 
-console.log(result);
+console.log(result13);
+
+// Find Characters with a Lazy Match
+let string = "titanic";
+let regex = /t[a-z]*?i/; 
+string.match(regex);
+
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<.*?>/; 
+let result = text.match(myRegex); // Returns <h1>
