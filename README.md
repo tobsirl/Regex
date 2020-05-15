@@ -142,6 +142,13 @@ let numString = "Your sandwich will be $5.00";
 let numRegex = /\d/g; // Change this line
 let result = numString.match(numRegex).length;
 ```
+
+```js
+// Match all non numbers
+let numString = "Your sandwich will be $5.00";
+let noNumRegex = /\D/g; // Change this line
+let result = numString.match(noNumRegex).length;
+```
 ---
 
 ## Flags i, g, m, s, u, y
