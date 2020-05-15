@@ -111,3 +111,8 @@ string.match(regex);
 let text = "<h1>Winter is coming</h1>";
 let myRegex = /<.*?>/; 
 let result = text.match(myRegex); // Returns <h1>
+
+// Match at the beginning of the string
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; // Change this line
+let result = calRegex.test(rickyAndCal); // Returns Cal

@@ -109,6 +109,13 @@ let myRegex = /<.*?>/;
 let result = text.match(myRegex); // Returns <h1>
 ```
 
+```js
+// Match at the beginning of the string
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; // Change this line
+let result = calRegex.test(rickyAndCal); // Returns Cal
+```
+
 ---
 
 ## Flags i, g, m, s, u, y
