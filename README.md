@@ -115,7 +115,12 @@ let rickyAndCal = "Cal and Ricky both like racing.";
 let calRegex = /^Cal/; // Change this line
 let result = calRegex.test(rickyAndCal); // Returns Cal
 ```
-
+```js
+// Match at the end of a string
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/; // Change this line
+let result = lastRegex.test(caboose); // Returns caboose
+```
 ---
 
 ## Flags i, g, m, s, u, y

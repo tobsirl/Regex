@@ -116,3 +116,8 @@ let result = text.match(myRegex); // Returns <h1>
 let rickyAndCal = "Cal and Ricky both like racing.";
 let calRegex = /^Cal/; // Change this line
 let result = calRegex.test(rickyAndCal); // Returns Cal
+
+// Match at the end of a string
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/; // Change this line
+let result = lastRegex.test(caboose); // Returns caboose
