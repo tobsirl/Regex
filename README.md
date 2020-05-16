@@ -171,6 +171,13 @@ let ohStr = "Ohhh no";
 let ohRegex = /Oh{3,6} no/; // Change this line
 let result = ohRegex.test(ohStr);
 ```
+
+```js
+// Check for All or None
+let favWord = "favorite";
+let favRegex = /favou?rite/; // Change this line
+let result = favRegex.test(favWord);
+```
 ---
 
 ## Flags i, g, m, s, u, y
