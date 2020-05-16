@@ -146,3 +146,8 @@ let result = numString.match(noNumRegex).length;
 let sample = "Whitespace is important in separating words";
 let countWhiteSpace = /\s/; // Change this line
 let result = sample.match(countWhiteSpace);
+
+// Match all non-whitespace
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\S/g; // Change this line
+let result = sample.match(countWhiteSpace);

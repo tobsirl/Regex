@@ -138,6 +138,7 @@ let result = quoteSample.match(nonAlphabetRegex).length;
 ```
 
 ```js 
+// Match all numbers
 let numString = "Your sandwich will be $5.00";
 let numRegex = /\d/g; // Change this line
 let result = numString.match(numRegex).length;
@@ -151,8 +152,16 @@ let result = numString.match(noNumRegex).length;
 ```
 
 ```js
+// Match all whitespace characters
 let sample = "Whitespace is important in separating words";
 let countWhiteSpace = /\s/; // Change this line
+let result = sample.match(countWhiteSpace);
+```
+
+```js
+// Match all non-whitespace characters
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\S/g; // Change this line
 let result = sample.match(countWhiteSpace);
 ```
 ---
