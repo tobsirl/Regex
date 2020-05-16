@@ -151,3 +151,8 @@ let result = sample.match(countWhiteSpace);
 let sample = "Whitespace is important in separating words";
 let countWhiteSpace = /\S/g; // Change this line
 let result = sample.match(countWhiteSpace);
+
+// Specify Upper and Lower Number of Matches
+let ohStr = "Ohhh no";
+let ohRegex = /Oh{3,6} no/; // Change this line
+let result = ohRegex.test(ohStr);
